@@ -1,9 +1,15 @@
-function makeArray(firstArray, secondArray, maxLength) {
+/*function makeArray(firstArray, secondArray, maxLength) {
   let transitionalArray = firstArray.concat(secondArray);
   let finalArray = [];
   for (let i = 0; i < maxLength; i++) {
     finalArray.push(transitionalArray[i]);
   }
+  return finalArray;
+}*/
+
+function makeArray(firstArray, secondArray, maxLength) {
+  let transitionalArray = firstArray.concat(secondArray);
+  let finalArray = transitionalArray.slice(0, maxLength);
   return finalArray;
 }
 
