@@ -1,3 +1,8 @@
+/*function slugify(title) {
+  const finalslug = title.split(' ');
+  return finalslug.join('-').toLowerCase();
+}*/
+
 function slugify(title) {
   return title.toLowerCase().replaceAll(' ', '-');
 }
