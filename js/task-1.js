@@ -1,10 +1,10 @@
 /*function slugify(title) {
-  const finalslug = title.split(' ');
-  return finalslug.join('-').toLowerCase();
+  return title.toLowerCase().replaceAll(' ', '-');
 }*/
 
 function slugify(title) {
-  return title.toLowerCase().replaceAll(' ', '-');
+  const finalslug = title.split(' ');
+  return finalslug.join('-').toLowerCase();
 }
 
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
